@@ -1,0 +1,19 @@
+services:
+  apaw-eureka:
+    build: .
+    image: apaw-eureka:latest
+    restart: always
+    ports: ["8761:8761"]
+    environment:
+      JAVA_OPTS: "-Xms64m -Xmx384m"
+    mem_limit: 512m
+    networks: [apawnet]
+
+networks:
+  apawnet:
+    external: true
+
+#> docker network create apawnet
+#> docker compose up --build -d
+# Para ver los logs de arranque
+#> docker logs -f goa-eureka

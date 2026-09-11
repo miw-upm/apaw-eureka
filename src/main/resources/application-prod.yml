@@ -1,0 +1,10 @@
+logging:
+  level:
+    root: WARN
+    es.upm.miw: INFO
+
+spring:
+  security:
+    user:
+      name: ${EUREKA_USER}
+      password: ${EUREKA_PASSWORD}
