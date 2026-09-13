@@ -16,4 +16,4 @@ networks:
 #> docker network create apawnet
 #> docker compose up --build -d
 # Para ver los logs de arranque
-#> docker logs -f goa-eureka
+#> docker logs -f apaw-eureka
